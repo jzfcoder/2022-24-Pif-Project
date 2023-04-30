@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import 'leaflet/dist/leaflet.css';
+
+import Map from './components/Map';
+
+import L from 'leaflet';
+
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+let DefaultIcon = L.icon({
+    iconUrl: icon,
+    shadowUrl: iconShadow
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+            <div className="App-header">
+                <h1 style={{margin: "0px"}}>FoodLine</h1>
+                <p>Food at your convenience</p>
+                {/* <button style={{fontSize: "20px"}}>donate</button> */}
+            </div>
+            <Map />
+       </>
+    );
 }
 
 export default App;
