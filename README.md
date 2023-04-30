@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# FoodLine Project (Built on Create React App)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Project FoodLine aims to make public foodpantries more accessible and useful. This is achieved through a connection to realtime data on the location and status of various food pantries around the neighborhood.
+
+****
+
 
 ## Available Scripts
 
