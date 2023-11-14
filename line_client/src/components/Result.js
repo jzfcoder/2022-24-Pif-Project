@@ -22,7 +22,7 @@ function Result() {
                 latlong: [37.358266890525876, -121.96525098921404],
                 address: '[address here]',
                 name: 'Noah',
-                image: '',
+                image: 'http://67.188.236.168:9000/response.jpeg',
                 id: 0,
             }]
     );
